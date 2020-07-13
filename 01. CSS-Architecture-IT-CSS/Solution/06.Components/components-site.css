@@ -14,11 +14,14 @@ body {
     border-top-right-radius: 0.5em;
     box-shadow: 0 0 10px 0 rgba(41, 57, 75, .25);
     width: auto;
+}
+
+.fixed-contact-us-right {
     position: fixed;
     top: 46%;
     right: -60px;
-    z-index: 199;
     transform: rotate(-90deg);
+    z-index: 199;
 }
 
 .fixed-contact-us a:hover,
