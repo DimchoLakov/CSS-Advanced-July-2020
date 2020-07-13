@@ -1,0 +1,10 @@
+a {
+    font: inherit;
+    color: #3E4C5D;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}

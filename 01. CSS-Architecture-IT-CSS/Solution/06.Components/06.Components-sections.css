@@ -1,0 +1,213 @@
+.section {
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+
+.section-cta {
+    position: relative;
+    bottom: 6em;
+    padding-top: 10em;
+    padding-bottom: 5em;
+    color: white;
+}
+
+.section-cta::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #42ABF8;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.section-cta::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: no-repeat top/cover url('../images/about-page-hero.jpg');
+    z-index: -2;
+}
+
+.section-cta a {
+    display: block;
+}
+
+.section-cta .section-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-buttons-apply {
+    margin-right: 2em;
+}
+
+.section-buttons-curriculum {
+    margin-left: 2em;
+}
+
+.a-separator {
+    border: 1px solid;
+    height: 2em;
+    width: 0;
+    justify-self: center;
+}
+
+.section-summary .section-content, .section-lab .section-content {
+    display: grid;
+    grid-template-columns: 1fr 53%;
+    column-gap: 5em;
+}
+
+.section-summary .section-content-media, .section-lab .section-content-media {
+    position: relative;
+    bottom: 3em;
+    display: flex;
+    justify-content: normal;
+    align-items: center;
+}
+
+.section-summary .section-content-media .media {
+    position: relative;
+}
+
+.section-summary .section-content-media .media:first-child::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -80px;
+    left: -55px;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background: url('../images/software-university-logo.png') no-repeat;
+    background-position: 50%;
+    background-color: white !important;
+    box-shadow: 0 6px 10px 0 rgba(41, 57, 75, .25);
+}
+
+.section-summary .section-content-media .media:nth-child(2)::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -55px;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    background: url('../images/softuni-logo.png') no-repeat;
+    background-position: 50%;
+    background-color: white;
+    box-shadow: 0 6px 10px 0 rgba(41, 57, 75, .25);
+}
+
+.section-summary .section-content-media .media:first-child, .section-lab .section-content-media .media:first-child {
+    margin-right: 3em;
+}
+
+.media img {
+    box-shadow: 0 6px 10px 0 rgba(41, 57, 75, .25);
+    border-radius: 0.5em;
+}
+
+.section-lab .section-content-media .media:first-child {
+    position: relative;
+    top: 3em;
+}
+
+.section-lab .section-content-media .media:nth-child(2) {
+    position: relative;
+    bottom: 3em;
+}
+
+.section-vision .page-content-wrapper {
+    background-color: #42ABF8;
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-radius: 0.5em;
+}
+
+.section-content-card-list {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.card-item {
+    flex-basis: 22%;
+}
+
+.card {
+    box-shadow: 0 6px 10px 0 rgba(41, 57, 75, .25);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card-media {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-media::before {
+    display: block;
+    content: '';
+    padding-top: 86%;
+}
+
+.card-media img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+}
+
+.card-info p {
+    margin: 0;
+}
+
+.card-info-name {
+    font-size: 1.25em;
+}
+
+.section-scholarship {
+    position: relative;
+}
+
+.section-scholarship .page-content-wrapper {
+    background-color: #42ABF8;
+    color: white;
+    padding-top: 2em;
+    padding-bottom: 5.5em;
+    border-radius: 0.5em;
+    margin-bottom: 3em;
+}
+
+.section-scholarship .section-content .media {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    background: url('../images/woman-teaching-medium.jpg') no-repeat;
+    box-shadow: 0 6px 10px 0 rgba(41,57,75, 0.25);
+}

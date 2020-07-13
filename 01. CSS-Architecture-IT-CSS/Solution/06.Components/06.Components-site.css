@@ -1,0 +1,9 @@
+.page-content-wrapper {
+    max-width: 74rem;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+body {
+    color: #3e4c5d;
+}

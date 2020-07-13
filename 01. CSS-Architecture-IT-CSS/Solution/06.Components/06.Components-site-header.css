@@ -1,0 +1,83 @@
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.wrapper-header {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.site-header .wrapper-header {
+    background-color: white;
+    padding: 0 1.1em;
+    border-bottom-left-radius: 0.45em;
+    border-bottom-right-radius: 0.45em;
+    box-shadow: 0 6px 10px 0 rgba(41, 57, 75, .25);
+}
+
+.site-header a {
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.site-header .nav a:hover,
+.site-header .nav a:focus {
+    background-color: #F5F6F7;
+}
+
+.nav-logo {
+    width: 120px;
+    margin-right: auto;
+}
+
+.nav-list-item a,
+.nav-auth-buttons-list-item a {
+    display: block;
+    padding: 2em 0.5em;
+}
+
+.nav-list-item-active {
+    position: relative;
+}
+
+.nav-list-item-active::before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background-color: #42ABF8;
+    width: 100%;
+}
+
+.nav-auth-buttons-list-item-login,
+.nav-auth-buttons-list-item-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-auth-buttons-list-item-signup a {
+    color: #42ABF8;
+    text-transform: uppercase;
+}
+
+.nav-auth-buttons-list-item-signup a:hover {
+    background-color: transparent;
+}
+
+.nav-auth-buttons-list-item-login {
+    margin-left: 1em;
+}
+
+.nav-auth-buttons-list-item-login a {
+    background-color: #42ABF8;
+    color: white;
+    padding: 0.8em 0.6em;
+    border-radius: 0.4em;
+    text-transform: uppercase;
+    font-weight: bold;
+}

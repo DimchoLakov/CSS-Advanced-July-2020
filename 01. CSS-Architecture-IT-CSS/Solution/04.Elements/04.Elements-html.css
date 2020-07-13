@@ -1,0 +1,15 @@
+html {
+    font: 16px/1.5 'Lato', sans-serif;
+}
+
+body,
+form,
+input,
+textarea,
+table,
+button,
+ul,
+ol,
+blockquote {
+    font: inherit;
+}

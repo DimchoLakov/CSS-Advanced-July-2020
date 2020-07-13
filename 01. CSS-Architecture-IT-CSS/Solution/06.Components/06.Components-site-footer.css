@@ -1,0 +1,38 @@
+.site-footer .page-content-wrapper {
+    border-top: 1px solid black;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.footer-nav a:hover {
+    text-decoration: none;
+    filter: brightness(1%);
+}
+
+.footer-logo-and-info {
+    margin-right: auto;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-right: 2em;
+}
+
+.footer-nav-list-item a {
+    display: block;
+    padding: 1.5em 0.3em;
+    margin: 0.1em;
+}
+
+.footer-icons-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons-list-item a {
+    padding: 0.4em;
+    margin: 0.1em
+}
