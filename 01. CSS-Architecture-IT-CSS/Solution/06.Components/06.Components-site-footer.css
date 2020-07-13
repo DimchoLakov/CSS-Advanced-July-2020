@@ -1,9 +1,15 @@
 .site-footer .page-content-wrapper {
     border-top: 1px solid black;
+    padding: 1.2rem 0;
 }
 
 .site-footer p {
     margin: 0;
+}
+
+.footer-copyright {
+    color: #CACACA;
+    font-size: 0.8rem;
 }
 
 .footer-nav a:hover {
