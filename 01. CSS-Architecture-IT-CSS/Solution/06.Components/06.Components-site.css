@@ -7,3 +7,33 @@
 body {
     color: #3e4c5d;
 }
+
+.fixed-contact-us {
+    background-color: white;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    box-shadow: 0 0 10px 0 rgba(41, 57, 75, .25);
+    width: auto;
+    position: fixed;
+    top: 46%;
+    right: -60px;
+    z-index: 199;
+    transform: rotate(-90deg);
+}
+
+.fixed-contact-us a:hover,
+.fixed-contact-us a:hover {
+    text-decoration: none;
+}
+
+.fixed-contact-us-link {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 5px 16px 16px;
+    color: #78828E;
+}
+
+.fixed-contact-us-text {
+    margin: 0 0 0 1em;
+}
