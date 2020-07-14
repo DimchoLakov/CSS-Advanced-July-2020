@@ -1,0 +1,247 @@
+.color-box-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-box-container__title {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.color-box-container__title,
+.color-box__title {
+    color: #234465;
+    margin-bottom: 0.5em;
+}
+
+.color-box {
+    flex: 1 1 30%;
+    text-align: center;
+    margin: 1em;
+}
+
+.color-box__field--primary-50 {
+    background-color: #FFF8E1;
+}
+
+.color-box__field--primary-100 {
+    background-color: #FFEDB3;
+}
+
+.color-box__field--primary-200 {
+    background-color: #FFE183;
+}
+
+.color-box__field--primary-300 {
+    background-color: #FFD650;
+}
+
+.color-box__field--primary-400 {
+    background-color: #FFCB29;
+}
+
+.color-box__field--primary-500 {
+    background-color: #FFC309;
+}
+
+.color-box__field--primary-600 {
+    background-color: #FFB401;
+}
+
+.color-box__field--primary-700 {
+    background-color: #FFA000;
+}
+
+.color-box__field--primary-800 {
+    background-color: #FF9100;
+}
+
+.color-box__field--primary-900 {
+    background-color: #FF7100;
+}
+
+.color-box__field--secondary-50 {
+    background-color: #E4F0F4;
+}
+
+.color-box__field--secondary-100 {
+    background-color: #BEDAE6;
+}
+
+.color-box__field--secondary-200 {
+    background-color: #99C3D7;
+}
+
+.color-box__field--secondary-300 {
+    background-color: #78ACC6;
+}
+
+.color-box__field--secondary-400 {
+    background-color: #629CBC;
+}
+
+.color-box__field--secondary-500 {
+    background-color: #4F8DB2;
+}
+
+.color-box__field--secondary-600 {
+    background-color: #4480A7;
+}
+
+.color-box__field--secondary-700 {
+    background-color: #397096;
+}
+
+.color-box__field--secondary-800 {
+    background-color: #306085;
+}
+
+.color-box__field--secondary-900 {
+    background-color: #234465;
+    color: white;
+}
+
+.color-box__field--secondary-1000 {
+    background-color: #203D5B;
+    color: white;
+}
+
+.color-box__field--secondary-1100 {
+    background-color: #1C3651;
+    color: white;
+}
+
+.color-box__field--secondary-1200 {
+    background-color: #193047;
+    color: white;
+}
+
+.color-box__field--grey-50 {
+    background-color: #F8F8F8;
+}
+
+.color-box__field--grey-100 {
+    background-color: #F1F1F1;
+}
+
+.color-box__field--grey-200 {
+    background-color: #E6E6E6;
+}
+
+.color-box__field--grey-300 {
+    background-color: #D6D6D6;
+}
+
+.color-box__field--grey-400 {
+    background-color: #B2B2B2;
+}
+
+.color-box__field--grey-500 {
+    background-color: #919191;
+}
+
+.color-box__field--grey-600 {
+    background-color: #696969;
+    color: white;
+}
+
+.color-box__field--grey-700 {
+    background-color: #565656;
+    color: white;
+}
+
+.color-box__field--grey-800 {
+    background-color: #383838;
+    color: white;
+}
+
+.color-box__field--grey-900 {
+    background-color: #181818;
+    color: white;
+}
+
+.color-box__field--green-50 {
+    background-color: #E5F4E8;
+}
+
+.color-box__field--green-100 {
+    background-color: #C0E4C6;
+}
+
+.color-box__field--green-200 {
+    background-color: #97D3A2;
+}
+
+.color-box__field--green-300 {
+    background-color: #6AC27D;
+}
+
+.color-box__field--green-400 {
+    background-color: #46B661;
+}
+
+.color-box__field--green-500 {
+    background-color: #12A945;
+}
+
+.color-box__field--green-600 {
+    background-color: #029A3C;
+}
+
+.color-box__field--green-700 {
+    background-color: #008831;
+}
+
+.color-box__field--green-800 {
+    background-color: #007726;
+}
+
+.color-box__field--green-900 {
+    background-color: #005912;
+    color: white;
+}
+
+.color-box__field--red-50 {
+    background-color: #FFEBEF;
+}
+
+.color-box__field--red-100 {
+    background-color: #FFCDD3;
+}
+
+.color-box__field--red-200 {
+    background-color: #F7999B;
+}
+
+.color-box__field--red-300 {
+    background-color: #F07073;
+}
+
+.color-box__field--red-400 {
+    background-color: #FC4C50;
+}
+
+.color-box__field--red-500 {
+    background-color: #FF3632;
+}
+
+.color-box__field--red-600 {
+    background-color: #F32B33;
+}
+
+.color-box__field--red-700 {
+    background-color: #E11E2D;
+}
+
+.color-box__field--red-800 {
+    background-color: #D41325;
+}
+
+.color-box__field--red-900 {
+    background-color: #C50018;
+}
