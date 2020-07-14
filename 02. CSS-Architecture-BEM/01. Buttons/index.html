@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <header></header>
+
+    <main>
+        <div class="buttons-box">
+            <h1 class="buttons-box__title">Buttons</h1>
+            <div class="buttons-box__buttons">
+
+                <button class="buttons-box__btn btn btn--primary" title="Primary">Apply</button>
+                <button class="buttons-box__btn btn btn--primary btn--disabled" title="Primary Disabled">Apply</button>
+
+                <button class="buttons-box__btn btn btn--secondary" title="Secondary">See All</button>
+                <button class="buttons-box__btn btn btn--secondary btn--disabled" disabled title="Secondary Disabled">See All</button>
+
+                <button class="buttons-box__btn btn btn--primary btn--small" title="Primary Small">Log In</button>
+                <button class="buttons-box__btn btn btn--primary btn--small btn--disabled" disabled title="Primary Small Disabled">Log In</button>
+
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script>
+        let primaryNotDisabledButtons = document.querySelectorAll('.btn--primary:not(.btn--disabled)');
+        for (let button of primaryNotDisabledButtons) {
+
+            let buttonBackground = button.style.backgroundColor;
+
+            button.addEventListener('mousedown', function(event) {
+                let btn = event.target;
+                btn.style.backgroundColor = '#FFB401';
+            });
+
+            button.addEventListener('mouseup', function(event) {
+                let btn = event.target;
+                btn.style.backgroundColor = buttonBackground;
+            });
+
+        }
+
+        let secondaryNotDisabledButtons = document.querySelectorAll('.btn--secondary:not(.btn--disabled)');
+        for (let button of secondaryNotDisabledButtons) {
+
+            let buttonBackground = button.style.backgroundColor;
+
+            button.addEventListener('mousedown', function(event) {
+                let btn = event.target;
+                btn.style.backgroundColor = 'rgba(255,160,0,0.2)';
+            });
+
+            button.addEventListener('mouseup', function(event) {
+                let btn = event.target;
+                btn.style.backgroundColor = buttonBackground;
+            });
+
+        }
+    </script>
+
+</body>
+
+</html>

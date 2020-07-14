@@ -1,0 +1,27 @@
+.buttons-box {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.buttons-box__title {
+    color: #234465;
+    text-align: center;
+}
+
+.buttons-box__buttons {
+    margin: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-box__btn {
+    display: inline-block;
+    margin-bottom: 1.5em;
+}
+
+.buttons-box__btn:not(:last-child) {
+    margin-right: 1em;
+}
