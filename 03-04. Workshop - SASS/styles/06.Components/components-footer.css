@@ -1,0 +1,115 @@
+.footer {
+  background-color: #565656;
+  border-top: 12px solid #919191;
+  margin-top: 150px;
+  position: relative;
+}
+
+.footer .footer-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.footer .footer-navbar .footer-logo {
+  display: block;
+  background: url(../../assets/footer-mask-group.svg) no-repeat center;
+  background-size: 228px 228px;
+  height: 450px;
+  width: 250px;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer .footer-navbar .footer-nav {
+  margin-right: 25px;
+}
+
+.footer .footer-navbar .footer-nav:last-child {
+  flex-basis: 12%;
+  margin-right: 0;
+}
+
+.footer .footer-navbar .footer-nav:nth-child(2) {
+  flex-basis: 23%;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__title {
+  color: #fff;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__list {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  max-height: 195px;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__list .footer-nav__list-item {
+  list-style: none outside;
+  margin-right: 20px;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__list .footer-nav__list-item a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e6e6e6;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: block;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__list .footer-nav__list-item a:hover {
+  color: #41bead;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__icon-list {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  display: flex;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__icon-list .footer-nav__icon-list-item {
+  list-style: none outside;
+  margin-right: 20px;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__icon-list .footer-nav__icon-list-item a {
+  font-style: normal;
+  font-weight: normal;
+  color: #e6e6e6;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  display: block;
+  color: #e6e6e6;
+  font-size: 30px;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__icon-list .footer-nav__icon-list-item a:hover {
+  color: #41bead;
+}
+
+.footer .footer-navbar .footer-nav .footer-nav__list,
+.footer .footer-navbar .footer-nav .footer-nav__icon-list {
+  padding: 0;
+}
+
+.footer .footer-navbar .footer-nav .footer__copyright {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #919191;
+}
+
+.footer .footer-navbar::before {
+  display: block;
+  content: "";
+  width: 250px;
+}

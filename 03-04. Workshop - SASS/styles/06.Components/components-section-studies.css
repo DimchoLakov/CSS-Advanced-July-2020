@@ -1,0 +1,9 @@
+.studies {
+  background-color: #ff9100;
+  color: #fff;
+  padding: 64px 295px;
+}
+
+.studies .studies__header {
+  margin-bottom: 24px;
+}
