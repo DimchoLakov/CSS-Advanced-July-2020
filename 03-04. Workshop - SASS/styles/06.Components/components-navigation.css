@@ -8,58 +8,58 @@
   align-items: center;
 }
 
-.navbar .navbar__brand .navbar__arrow {
+.navbar__brand .navbar__arrow {
   width: 24px;
   height: 14px;
 }
 
-.navbar .navbar__brand .navbar__logo {
+.navbar__brand .navbar__logo {
   width: 122px;
   height: 42px;
 }
 
-.navbar .navbar__nav {
+.navbar__nav {
   margin-left: auto;
 }
 
-.navbar .navbar__nav .nav {
+.nav {
   margin: 0;
 }
 
-.navbar .navbar__nav .nav .nav__item {
+.nav .nav__item {
   list-style: none outside;
 }
 
-.navbar .navbar__nav .nav .nav__item a {
+.nav a {
   color: #565656;
   text-transform: uppercase;
   display: block;
   padding: 29px 12px;
 }
 
-.navbar .navbar__nav .nav .nav__item a:hover {
+.nav a:hover {
   color: #ff7100;
 }
 
-.navbar .navbar__login {
+.navbar__login {
   margin-left: 3.5em;
 }
 
-.navbar .navbar__login .navbar__search {
+.navbar__login .navbar__search {
   margin-right: 1.2em;
 }
 
-.navbar .navbar__login .navbar__search .navbar__search-icon {
+.navbar__login .navbar__search-icon {
   width: 16px;
   height: 16px;
 }
 
-.navbar .navbar__login a {
+.navbar__login a {
   display: block;
   padding: 29px 12px;
 }
 
-.navbar .navbar__login .btn {
+.navbar__login .btn {
   font-size: 13px;
   line-height: 16px;
   padding: 10px 22px;

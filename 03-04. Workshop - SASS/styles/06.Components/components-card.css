@@ -5,7 +5,7 @@
   justify-content: space-between;
 }
 
-.cards .card {
+.card {
   max-width: 410px;
   margin-bottom: 10px;
   border-radius: 12px;
@@ -13,24 +13,16 @@
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
-.cards .card:not(:last-child) {
+.card:not(:last-child) {
   margin-right: 10px;
 }
 
-.cards .card .card__header {
+.card .card__header {
   padding: 70px 24px 32px;
   position: relative;
 }
 
-.cards .card .card__header.card__header--blue {
-  background-color: #44a9f8;
-}
-
-.cards .card .card__header.card__header--green {
-  background-color: #41bead;
-}
-
-.cards .card .card__header .card__label {
+.card .card__label {
   position: absolute;
   top: 17px;
   left: 15px;
@@ -45,52 +37,60 @@
   padding: 4px 8px;
 }
 
-.cards .card .card__header .card__label.card__label-grey {
+.card .card__label-grey {
   background-color: #676781;
 }
 
-.cards .card .card__header .card__label.card__label-purple {
+.card .card__label-purple {
   background-color: #9a5dc6;
 }
 
-.cards .card .card__header .card__label.card__label-orange {
+.card .card__label-orange {
   background-color: #ff7100;
 }
 
-.cards .card .card__title {
+.card .card__title {
   margin: 0;
   color: #fff;
 }
 
-.cards .card .card__body {
+.card .card__body {
   padding-top: 24px;
   padding-bottom: 24px;
 }
 
-.cards .card .card__body .card-info {
+.card .card-info {
   padding: 5px;
   flex-basis: 42%;
   text-align: center;
 }
 
-.cards .card .card__body .card-info .card-info__img {
+.card .card-info__img {
   margin-right: 10px;
 }
 
-.cards .card .card__body,
-.cards .card .card-info {
+.card .card__body,
+.card .card-info {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   align-items: center;
 }
 
-.cards .card .card__body,
-.cards .card .card__footer {
+.card .card__header--blue {
+  background-color: #44a9f8;
+}
+
+.card .card__header--green {
+  background-color: #41bead;
+}
+
+.card .card__body,
+.card .card__footer {
   background: #fff;
 }
 
-.cards .card .card__footer {
+.card .card__footer {
   padding: 24px;
   display: flex;
   align-items: center;
@@ -98,9 +98,9 @@
   flex-flow: row wrap;
 }
 
-.cards .card .card__footer::before {
+.card .card__footer::before {
   display: block;
-  content: "";
+  content: '';
   background: #f1f1f1;
   width: 361px;
   height: 1px;
@@ -108,7 +108,7 @@
   top: -20px;
 }
 
-.cards .card .card__footer .card-price {
+.card .card-price {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 600;

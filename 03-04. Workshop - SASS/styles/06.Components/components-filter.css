@@ -84,15 +84,15 @@
   flex-basis: auto;
 }
 
-.filter-gadget .filter-gadget__label.filter-gadget__label--beginner {
+.filter-gadget .filter-gadget__label--beginner {
   background-color: #676781;
 }
 
-.filter-gadget .filter-gadget__label.filter-gadget__label--intermediate {
+.filter-gadget .filter-gadget__label--intermediate {
   background-color: #9a5dc6;
 }
 
-.filter-gadget .filter-gadget__label.filter-gadget__label--advanced {
+.filter-gadget .filter-gadget__label--advanced {
   background-color: #ff7100;
 }
 
