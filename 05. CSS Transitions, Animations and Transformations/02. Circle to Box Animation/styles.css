@@ -1,0 +1,28 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    background-color: #fe9700;
+    width: 200px;
+    height: 200px;
+    animation: shrink-to-circle 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes shrink-to-circle {
+    from {
+        background-color: #fe9700;
+        width: 200px;
+        height: 200px;
+    }
+
+    to {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #fe0000;
+    }
+}
