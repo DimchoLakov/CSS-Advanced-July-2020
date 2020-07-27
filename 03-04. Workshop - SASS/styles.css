@@ -1,8 +1,126 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Lato/fonts/Lato-Black.woff") format("woff"), url("./Lato/fonts/Lato-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  font-style: italic;
+  src: url("./Lato/fonts/Lato-BlackItalic.woff") format("woff"), url("./Lato/fonts/Lato-BlackItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: bold;
+  font-style: normal;
+  src: url("./Lato/fonts/Lato-Bold.woff") format("woff"), url("./Lato/fonts/Lato-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: bold;
+  font-style: italic;
+  src: url("./Lato/fonts/Lato-BoldItalic.woff") format("woff"), url("./Lato/fonts/Lato-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./Lato/fonts/Lato-Hairline.woff") format("woff"), url("./Lato/fonts/Lato-Hairline.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: italic;
+  src: url("./Lato/fonts/Lato-HairlineItalic.woff") format("woff"), url("./Lato/fonts/Lato-HairlineItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  font-style: normal;
+  src: url("./Lato/fonts/Lato-Heavy.woff") format("woff"), url("./Lato/fonts/Lato-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 900;
+  font-style: italic;
+  src: url("./Lato/fonts/Lato-HeavyItalic.woff") format("woff"), url("./Lato/fonts/Lato-HeavyItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: normal;
+  src: url("./Lato/fonts/Lato-Light.woff") format("woff"), url("./Lato/fonts/Lato-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 300;
+  font-style: italic;
+  src: url("./Lato/fonts/Lato-LightItalic.woff") format("woff"), url("./Lato/fonts/Lato-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  font-style: normal;
+  src: url("./Lato/fonts/Lato-Medium.woff") format("woff"), url("./Lato/fonts/Lato-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  font-style: italic;
+  src: url("./Lato/fonts/Lato-MediumItalic.woff") format("woff"), url("./Lato/fonts/Lato-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./Lato/fonts/Lato-Regular.woff") format("woff"), url("./Lato/fonts/Lato-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  font-style: normal;
+  src: url("./Lato/fonts/Lato-Semibold.woff") format("woff"), url("./Lato/fonts/Lato-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 600;
+  font-style: italic;
+  src: url("./Lato/fonts/Lato-SemiboldItalic.woff") format("woff"), url("./Lato/fonts/Lato-SemiboldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 100;
+  font-style: normal;
+  src: url("./Lato/fonts/Lato-Thin.woff") format("woff"), url("./Lato/fonts/Lato-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 100;
+  font-style: italic;
+  src: url("./Lato/fonts/Lato-ThinItalic.woff") format("woff"), url("./Lato/fonts/Lato-ThinItalic.woff2") format("woff2");
+}
+
 html,
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 a,
@@ -35,7 +153,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
 }
 
@@ -319,7 +437,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url("../../assets/select-arrow-down.svg") no-repeat right;
+  background: url("./assets/select-arrow-down.svg") no-repeat right;
   background-position-x: 170px;
   width: 197px;
   height: 44px;
@@ -610,7 +728,7 @@ a {
 
 .footer-navbar .footer-logo {
   display: block;
-  background: url(../../assets/footer-mask-group.svg) no-repeat center;
+  background: url("./assets/footer-mask-group.svg") no-repeat center;
   background-size: 228px 228px;
   height: 450px;
   width: 250px;

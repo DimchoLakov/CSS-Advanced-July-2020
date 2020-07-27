@@ -14,7 +14,7 @@
 
 .footer-navbar .footer-logo {
   display: block;
-  background: url(../../assets/footer-mask-group.svg) no-repeat center;
+  background: url("./assets/footer-mask-group.svg") no-repeat center;
   background-size: 228px 228px;
   height: 450px;
   width: 250px;

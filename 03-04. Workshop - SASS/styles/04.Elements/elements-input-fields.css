@@ -7,11 +7,11 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url("../../assets/select-arrow-down.svg") no-repeat right;
+  background: url("./assets/select-arrow-down.svg") no-repeat right;
   background-position-x: 170px;
   width: 197px;
   height: 44px;
-  border: 1px solid #FF9100;
+  border: 1px solid #ff9100;
   border-radius: 4px;
   padding: 12px 18px;
 }
