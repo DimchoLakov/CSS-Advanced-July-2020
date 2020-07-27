@@ -1,11 +1,3 @@
-@keyframes change-outline-width {
-    from {
-    }
-
-    to {
-    }
-}
-
 body {
     height: 100vh;
     display: flex;
