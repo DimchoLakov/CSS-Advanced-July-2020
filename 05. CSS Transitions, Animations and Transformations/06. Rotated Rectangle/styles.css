@@ -1,0 +1,37 @@
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.media-wrapper {
+    border: 1px solid black;
+    padding: 120px;
+}
+
+.media,
+.image-wrapper {
+    margin: 0 auto;
+    transform-origin: 50% 50%;
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+}
+
+.media {
+    transform: rotate(45deg) translateY(10px);
+}
+
+.image-wrapper {
+    width: 355px;
+    height: 355px;
+    transform: rotate(-45deg) translateY(-74px);
+    border-radius: 20px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+}
