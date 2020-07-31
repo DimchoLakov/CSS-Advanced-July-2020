@@ -1,0 +1,11 @@
+@import "../01.Settings/settings-colors.scss";
+
+.studies {
+    background-color: $secondary-800;
+    color: $white;
+    padding: 64px 295px;
+}
+
+.studies__header {
+    margin-bottom: 24px;
+}

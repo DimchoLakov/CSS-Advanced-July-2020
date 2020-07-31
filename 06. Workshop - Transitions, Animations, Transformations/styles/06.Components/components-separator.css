@@ -1,0 +1,18 @@
+.separator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.separator__dot {
+  width: 10px;
+  height: 10px;
+  background: #dff4f1;
+  -webkit-transform: matrix(0, -1, -1, 0, 0, 0);
+          transform: matrix(0, -1, -1, 0, 0, 0);
+  border-radius: 50%;
+}
+/*# sourceMappingURL=components-separator.css.map */

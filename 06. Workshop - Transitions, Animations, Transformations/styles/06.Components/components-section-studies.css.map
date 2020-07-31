@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACL,gBAAgB,ECHJ,OAAO;EDInB,KAAK,ECiBD,IAAI;EDhBR,OAAO,EAAE,UAAU;CACtB;;AAED,AAAA,gBAAgB,CAAC;EACb,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "components-section-studies.scss",
+        "../01.Settings/settings-colors.scss"
+    ],
+    "names": [],
+    "file": "components-section-studies.css"
+}

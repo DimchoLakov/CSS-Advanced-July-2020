@@ -1,0 +1,22 @@
+select {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #919191;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url("./assets/select-arrow-down.svg") no-repeat right;
+  background-position-x: 170px;
+  width: 197px;
+  height: 44px;
+  border: 1px solid #ff9100;
+  border-radius: 4px;
+  padding: 12px 18px;
+}
+
+option:not(:first-of-type) {
+  color: #565656;
+}
+/*# sourceMappingURL=elements-input-fields.css.map */
