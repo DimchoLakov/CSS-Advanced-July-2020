@@ -1,0 +1,13 @@
+body {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+article {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
