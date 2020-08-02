@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    /* grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-areas: 
+                        "header header header"
+                        "main main aside"
+                        "footer footer footer";
+
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+header,
+main,
+aside,
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
