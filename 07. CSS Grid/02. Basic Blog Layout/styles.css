@@ -1,0 +1,36 @@
+body {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    column-gap: 30px;
+}
+
+header,
+main,
+aside,
+footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+main {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+aside {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
