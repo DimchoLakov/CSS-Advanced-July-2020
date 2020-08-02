@@ -1,0 +1,126 @@
+@import "../01.Settings/settings-colors";
+
+.cards {
+    margin-top: 64px;
+    margin-bottom: 127px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    max-width: 410px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s, box-shadow 0.4s;
+
+    &:hover {
+        transform: scale(1.06);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.08), 0 1px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    &__header {
+        padding: 70px 24px 32px;
+        position: relative;
+    }
+
+    &__label {
+        position: absolute;
+        top: 17px;
+        left: 15px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 14px;
+        color: #fff;
+        text-transform: uppercase;
+        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 4px;
+        padding: 4px 8px;
+    }
+
+    &__label-grey {
+        background-color: $grey-600;
+    }
+
+    &__label-purple {
+        background-color: $purple-700;
+    }
+
+    &__label-orange {
+        background-color: $secondary-900;
+    }
+
+    &__title {
+        margin: 0;
+        color: $white;
+    }
+
+    &__body {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    &-info {
+        padding: 5px;
+        flex-basis: 42%;
+        text-align: center;
+    }
+
+    &-info__img {
+        margin-right: 10px;
+    }
+
+    &__body,
+    &-info {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        align-items: center;
+    }
+
+    &__header--blue {
+        background-color: $blue-400;
+    }
+
+    &__header--green {
+        background-color: $primary-300;
+    }
+
+    &__body,
+    &__footer {
+        background: $white;
+    }
+
+    &__footer {
+        padding: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-flow: row wrap;
+
+        &::before {
+            display: block;
+            content: '';
+            background: $grey-100;
+            width: 361px;
+            height: 1px;
+            position: relative;
+            top: -20px;
+        }
+    }
+
+    &-price {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        color: $red-400;
+    }
+}

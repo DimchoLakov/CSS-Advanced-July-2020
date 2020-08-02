@@ -1,0 +1,14 @@
+@import '../01.Settings/settings-colors';
+
+.separator {
+    display: flex;
+    justify-content: space-between;
+}
+
+.separator__dot {
+    width: 10px;
+    height: 10px;
+    background: $primary-50;
+    transform: matrix(0, -1, -1, 0, 0, 0);
+    border-radius: 50%;
+}
