@@ -1,0 +1,114 @@
+@import "../01.Settings/settings-colors";
+
+.filters--background-grey {
+    background-color: $grey-50;
+}
+
+.filters {
+    padding: 9px 0;
+
+    &__title {
+        color: $grey-700;
+    }
+}
+
+.filters-label {
+    position: relative;
+
+    &__img-left {
+        width: 32px;
+        height: 32px;
+        margin-right: 18px;
+    }
+
+    &__img-right {
+        width: 20px;
+        height: 20px;
+        margin-left: 12px;
+    }
+
+    &__extra-info {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -250px;
+        left: -25.4px;
+        background: $white;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+        width: 600px;
+        padding: 10px 15px 10px 20px;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    &__info:hover + &__extra-info {
+        opacity: 1;
+    }
+
+    .triangle {
+        content: "";
+        height: 0;
+        position: absolute;
+        top: 97%;
+        width: 0;
+        right: 50%;
+        border: medium solid $white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent $white;
+        transform: rotate(90deg);
+        -webkit-filter: drop-shadow(2px 0px 1px rgba(0, 0, 0, 0.3));
+        filter: drop-shadow(2px 0px 1px rgba(0, 0, 0, 0.3));
+    }
+}
+
+.filter-gadget {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+
+    &::after {
+        display: block;
+        content: '';
+        height: 22px;
+        background-color: $grey-200;
+    }
+
+    &__label {
+        position: static;
+        margin-right: 15px;
+        white-space: nowrap;
+        color: $white;
+        padding: 4px 8px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 0px 2px rgba(0, 0, 0, 0.14);
+        border-radius: 4px;
+        flex-basis: auto;
+    }
+
+    &__label--beginner {
+        background-color: $grey-600;
+    }
+
+    &__label--intermediate {
+        background-color: $purple-700;
+    }
+
+    &__label--advanced {
+        background-color: $secondary-900;
+    }
+
+    &__text {
+        flex-basis: auto;
+        color: $grey-500;
+    }
+}
+
+.filters,
+.filters-label {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}

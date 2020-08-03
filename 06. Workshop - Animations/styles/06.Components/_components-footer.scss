@@ -1,0 +1,119 @@
+@import "../01.Settings/settings-colors";
+
+.footer {
+    background-color: $grey-700;
+    border-top: 12px solid $grey-500;
+    margin-top: 150px;
+    position: relative;
+}
+
+.footer-navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    .footer-logo {
+        display: block;
+        background: url('./assets/footer-mask-group.svg') no-repeat center;
+        background-size: 228px 228px;
+        height: 450px;
+        width: 250px;
+        position: absolute;
+        bottom: 0;
+    }
+
+    &::before {
+        display: block;
+        content: "";
+        width: 250px;
+    }
+}
+
+.footer-nav {
+    margin-right: 25px;
+
+    &:last-child {
+        flex-basis: 12%;
+        margin-right: 0;
+    }
+
+    &:nth-child(2) {
+        flex-basis: 23%;
+    }
+
+    &__title {
+        color: $white;
+        margin: 0;
+        margin-bottom: 16px;
+    }
+
+    &__list,
+    &__icon-list {
+        padding: 0;
+    }
+
+    .footer__copyright {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey-500;
+    }
+}
+
+.footer-nav__list {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 195px;
+
+    &-item {
+        list-style: none outside;
+        margin-right: 20px;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        color: $grey-200;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        display: block;
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        color: $primary-300;
+    }
+}
+
+.footer-nav__icon-list {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    display: flex;
+
+    &-item {
+        list-style: none outside;
+        margin-right: 20px;
+    }
+
+    a {
+        font-style: normal;
+        font-weight: normal;
+        color: $grey-200;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        display: block;
+        color: $grey-200;
+        font-size: 30px;
+        transition: color 0.3s;
+    }
+
+    a:hover {
+        color: $primary-300;
+    }
+}

@@ -1,0 +1,17 @@
+@import "../06.Components/components-animations";
+
+.fade-in {
+    animation: fade-in 0.7s forwards 1 ease-out;
+    opacity: 0;
+
+    $delayInMs: 100;
+    $maxDelayInMs: 2000ms;
+    @while $delayInMs <= $maxDelayInMs {
+    
+        &--delay-#{$delayInMs} {
+           animation-delay: #{$delayInMs}ms;
+        }
+
+        $delayInMs: $delayInMs + 100;
+    }
+}   
