@@ -1,0 +1,23 @@
+.dotted-border {
+
+    &--horizontal {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .dot {
+        width: 10px;
+        height: 10px;
+        background-color: $secondary-100;
+        border-radius: 50%;
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        &--horizontal:not(:last-child) {
+            margin-right: 8px;
+            margin-bottom: 0;
+        }
+    }
+}

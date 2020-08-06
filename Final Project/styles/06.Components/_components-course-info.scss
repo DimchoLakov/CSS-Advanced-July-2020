@@ -1,0 +1,59 @@
+@import "./components-dotted-border";
+
+.course-info__content {
+    padding-top: 152px;
+    padding-bottom: 62px;
+}
+
+.course-info-about {
+    display: grid;
+    grid-template-columns: 739px 1fr;
+    align-items: center;
+    column-gap: 111px;
+    margin-bottom: 96px;
+
+    &__paragraph {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__paragraph:not(:last-child) {
+        margin-bottom: 22px;
+    }
+
+    &__trainer {
+        position: relative;
+    }
+
+    &__play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.course-info-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 190px;
+    position: relative;
+
+    .dotted-border {
+        position: absolute;
+        left: 50%;
+    }
+}
+
+.course-info-point {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-start;
+    column-gap: 32px;
+
+    &__title {
+        margin-top: 0;
+        color: $grey-700;
+        margin-bottom: 16px;
+    }
+}
