@@ -1,0 +1,70 @@
+@import "../01.Settings/settings-colors";
+
+.navbar,
+.navbar__brand,
+.navbar_nav,
+.navbar__login,
+.nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.navbar__brand {
+    .navbar__arrow {
+        width: 24px;
+        height: 14px;
+    }
+
+    .navbar__logo {
+        width: 122px;
+        height: 42px;
+    }
+}
+
+.navbar__nav {
+    margin-left: auto;
+}
+
+.nav {
+    margin: 0;
+
+    &__item {
+        list-style: none outside;
+    }
+
+    &__item:not(:last-child) {
+        margin-right: 24px;
+    }
+
+    a {
+        color: $grey-700;
+        text-transform: uppercase;
+        display: block;
+        padding: 29px 12px;
+        transition: color 0.3s;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: $secondary-900;
+    }
+}
+
+.navbar__login {
+    margin-left: 32px;
+
+    .navbar__search {
+        margin-right: 32px;
+    }
+
+    .navbar__search-icon {
+        width: 16px;
+        height: 16px;
+    }
+
+    a {
+        display: block;
+        padding: 29px 12px;
+    }
+}

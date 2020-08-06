@@ -1,0 +1,61 @@
+@import url("../01.Settings/_settings-colors.scss");
+
+.intro {
+    background-color: $blue-400;
+    position: relative;
+}
+
+.intro-header {
+    text-align: center;
+    padding-top: 68px;
+    padding-bottom: 104px;
+
+    &__title {
+        color: $white;
+        width: 50%;
+        margin: 0 auto;
+        padding-top: 24px;
+    }
+}
+
+.intro-content {
+    background-color: $white;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    position: absolute;
+    bottom: -18%;
+}
+
+.intro-content__button-wrapper {
+    padding: 32px 0 32px 64px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.intro-content__button-wrapper .btn {
+    margin-right: 64px;
+}
+
+.circles {
+    position: absolute;
+    right: 0;
+
+    .circle {
+        width: 12px;
+        height: 12px;
+        background-color: $blue-400;
+        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.6);
+        border-radius: 50%;
+        margin: 7px 0;
+    }
+}
+
+.intro-widget {
+    display: flex;
+}
