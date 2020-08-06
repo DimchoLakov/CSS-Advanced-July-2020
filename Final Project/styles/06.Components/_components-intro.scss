@@ -1,61 +1,84 @@
-@import url("../01.Settings/_settings-colors.scss");
+@import "../01.Settings/settings-colors";
+@import "../06.Components/components-circles";
 
 .intro {
     background-color: $blue-400;
-    position: relative;
-}
+    height: 312px;
 
-.intro-header {
-    text-align: center;
-    padding-top: 68px;
-    padding-bottom: 104px;
+    &-header {
+        text-align: center;
+        padding-top: 68px;
 
-    &__title {
-        color: $white;
-        width: 50%;
-        margin: 0 auto;
-        padding-top: 24px;
+        &__title {
+            color: $white;
+            width: 50%;
+            margin: 0 auto;
+            padding-top: 24px;
+        }
     }
 }
 
 .intro-content {
     background-color: $white;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 291px 1fr;
     justify-items: center;
     align-items: center;
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
-    position: absolute;
-    bottom: -18%;
-}
-
-.intro-content__button-wrapper {
-    padding: 32px 0 32px 64px;
-    display: flex;
-    align-items: center;
     position: relative;
-}
+    bottom: -54px;
 
-.intro-content__button-wrapper .btn {
-    margin-right: 64px;
-}
+    &__button-wrapper {
+        padding: 32px 0 32px 64px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
 
-.circles {
-    position: absolute;
-    right: 0;
-
-    .circle {
-        width: 12px;
-        height: 12px;
-        background-color: $blue-400;
-        box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.6);
-        border-radius: 50%;
-        margin: 7px 0;
+    &__button-wrapper .btn {
+        margin-right: 64px;
     }
 }
 
-.intro-widget {
-    display: flex;
+.intro-widgets {
+    display: grid;
+    grid-template-columns: max-content max-content max-content max-content;
+    column-gap: 64px;
+
+    .intro-widget {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        justify-items: center;
+        align-items: center;
+        column-gap: 24px;
+        position: relative;
+
+        &:not(:last-child)::after {
+            display: block;
+            content: "";
+            position: absolute;
+            right: -32px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $grey-100;
+            width: 2px;
+            height: 24px;
+        }
+
+        &__title {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 3px;
+            color: $grey-700;
+        }
+
+        &__content {
+            margin-top: 3px;
+            font-weight: bold;
+            color: $secondary-800;
+        }
+    }
 }

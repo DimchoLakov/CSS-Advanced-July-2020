@@ -1,9 +1,7 @@
 @import "../01.Settings/settings-colors";
 
 .navbar,
-.navbar__brand,
 .navbar_nav,
-.navbar__login,
 .nav {
     display: flex;
     flex-flow: row wrap;
@@ -11,6 +9,11 @@
 }
 
 .navbar__brand {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 16px;
+    align-items: center;
+
     .navbar__arrow {
         width: 24px;
         height: 14px;
@@ -53,9 +56,17 @@
 
 .navbar__login {
     margin-left: 32px;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 32px;
+    align-items: center;
 
     .navbar__search {
-        margin-right: 32px;
+        transition: transform 0.25s;
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
     .navbar__search-icon {
