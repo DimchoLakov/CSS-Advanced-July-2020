@@ -1,0 +1,55 @@
+@import "../01.Settings/settings-colors";
+@import "../01.Settings/settings-mixins";
+
+.schedule {
+    background-color: $yellow-600;
+    padding-top: 64px;
+    padding-bottom: 49px;
+    position: relative;
+
+    &::before {
+        @include shredded-border;
+        top: -10px;
+    }
+
+    &::after {
+        @include shredded-border;
+        bottom: -40px;
+    }
+}
+
+.schedule-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: flex-end;
+    column-gap: 138px;
+
+    &__desc {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        column-gap: 32px;
+    }
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__title,
+    &__info,
+    &__classes {
+        color: $grey-700;
+    }
+
+    &__classes {
+        display: inline-block;
+        margin-bottom: 12px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    &__schechulde-icon {
+        margin-bottom: 9px;
+    }
+}

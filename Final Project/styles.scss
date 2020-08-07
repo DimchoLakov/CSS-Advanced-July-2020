@@ -1,5 +1,6 @@
 @import "./styles/01.Settings/settings-breakpoints";
 @import "./styles/01.Settings/settings-colors";
+@import "./styles/01.Settings/settings-mixins";
 
 @import "./styles/03.Generic/generic-normalize";
 
@@ -20,6 +21,7 @@
 @import "./styles/06.Components/components-circles";
 @import "./styles/06.Components/components-course-info";
 @import "./styles/06.Components/components-dotted-border";
+@import "./styles/06.Components/components-schedule";
 
 
 @import "./styles/07.Utilities/utilities-centered";
