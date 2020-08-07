@@ -1,0 +1,72 @@
+@import "../01.Settings/settings-colors";
+@import "../06.Components/components-dotted-border";
+
+.studies-content {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 608px 614px;
+    align-items: center;
+    column-gap: 80px;
+    row-gap: 110px;
+    padding-top: 60px;
+}
+
+.studies-content-certificate__img-wrapper {
+    justify-self: center;
+    position: relative;
+    margin-left: 66px;
+
+    .studies-content-certificate__info {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        white-space: nowrap;
+        color: $grey-700;
+    }
+}
+
+.studies-content-point {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 32px;
+
+    &__content {
+        color: $grey-700;
+        position: relative;
+
+        .dotted-border {
+            position: absolute;
+            top: 0;
+            right: -48px;
+        }
+    }
+
+    &__title {
+        margin-top: 0;
+        margin-bottom: 16px;
+    }
+
+    &__info {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &__info:not(:last-child) {
+        margin-bottom: 22px;
+    }
+
+    &__anchor {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: $secondary-800;
+        border-bottom: 1px solid $secondary-800;
+    }
+}
