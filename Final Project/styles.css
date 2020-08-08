@@ -440,7 +440,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: url("../../assets/icons/select arrow down.svg") no-repeat right;
+  background: url("./assets/icons/select-arrow-down.svg") no-repeat right;
   background-position-x: calc(100% - 20px);
   background-color: #fff;
   width: 100%;
