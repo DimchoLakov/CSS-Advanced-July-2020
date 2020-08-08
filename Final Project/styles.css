@@ -1261,6 +1261,27 @@ p {
   border-bottom: 1px solid #ff9100;
 }
 
+.trainers-intro {
+  text-align: center;
+  background-color: #ffb402;
+}
+
+.trainers-intro__title, .trainers-intro__desc {
+  color: #fff;
+}
+
+.trainers-intro__title {
+  margin: 0;
+  padding-top: 64px;
+  padding-bottom: 24px;
+}
+
+.trainers-intro__desc {
+  width: 65%;
+  margin: 0 auto;
+  padding-bottom: 64px;
+}
+
 .text-center {
   text-align: center;
 }
