@@ -1,0 +1,68 @@
+@import "../01.Settings/settings-colors";
+@import "../06.Components/components-animations";
+
+.trainer {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
+    &__img-wrapper {
+        overflow: hidden;
+        border-radius: 50%;
+        border: 8px solid $primary-300;
+        background-color: $secondary-800;
+        position: relative;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:hover .trainer__img-wrapper-info {
+            display: block;
+            // -webkit-animation: fade-in 1s;
+            animation: fade-in 0.3s ease-in-out;
+        }
+
+        &:hover .trainer__img {
+            opacity: 0.2;
+        }
+    }
+
+    &__img-wrapper-info {
+        display: none;
+        position: absolute;
+        top: 42px;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+
+    &__img-wrapper-info-text {
+        color: $white;
+        font-size: 10px;
+        margin-top: 10px;
+        text-transform: uppercase;
+    }
+
+    &__img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transition: opacity 0.2s;
+    }
+
+    &__name {
+        margin-top: 24px;
+        margin-bottom: 8px;
+        color: $primary-300;
+    }
+
+    &__info {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: $grey-400;
+    }
+}

@@ -1,0 +1,58 @@
+@import "../01.Settings/settings-colors";
+@import "../06.Components/components-trainer";
+@import "../06.Components/components-dotted-border";
+@import "../01.Settings/settings-mixins";
+
+.trainers-about {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    &__content {
+        position: relative;
+
+        &::after {
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            right: -5px;
+            height: 50px;
+            background: radial-gradient(closest-side, $primary-50, $primary-50 50%, transparent 50%);
+            background-size: 20px 20px;
+            background-repeat: repeat-x;
+            bottom: -136px;
+        }
+    }
+}
+
+.trainers-about-list {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 32px;
+}
+
+.trainers-about-list-item {
+    display: grid;
+    grid-template-columns: auto 410px;
+    column-gap: 32px;
+
+    &__title {
+        color: $primary-300;
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        color: $grey-400;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__info {
+        margin-top: 24px;
+        margin-bottom: 0;
+    }
+}
