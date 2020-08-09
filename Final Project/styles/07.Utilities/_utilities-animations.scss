@@ -5,7 +5,7 @@
     opacity: 0;
 
     $delayInMs: 100;
-    $maxDelayInMs: 2000ms;
+    $maxDelayInMs: 2500ms;
     @while $delayInMs <= $maxDelayInMs {
     
         &--delay-#{$delayInMs} {

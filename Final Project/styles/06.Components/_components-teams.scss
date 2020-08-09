@@ -1,0 +1,55 @@
+@import "../01.Settings/settings-colors";
+
+.teams {
+    background-color: $blue-300;
+    border-top: 12px solid $blue-200;
+    padding-bottom: 128px;
+
+    &__header,
+    &__content,
+    &__info {
+        text-align: center;
+        color: $white;
+    }
+
+    &__title {
+        margin-top: 64px;
+        margin-bottom: 24px;
+    }
+
+    &__info {
+        margin: 0 auto;
+        margin-bottom: 48px;
+        width: 65%;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 228px 228px 228px min-content;
+        column-gap: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__form-button {
+        margin-left: 16px;
+    }
+
+    &__input {
+        background-color: transparent;
+        border: 1px solid $white;
+        color: $white;
+
+        &::placeholder {
+            color: $white;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &:focus {
+            color: $white;
+        }
+    }
+}

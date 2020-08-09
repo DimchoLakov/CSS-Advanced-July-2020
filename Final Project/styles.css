@@ -453,6 +453,11 @@ select {
   margin-bottom: 16px;
 }
 
+input {
+  border-radius: 6px;
+  padding: 16px;
+}
+
 a {
   text-decoration: none;
 }
@@ -511,7 +516,6 @@ p {
 .footer {
   background-color: #565656;
   border-top: 12px solid #919191;
-  margin-top: 148px;
   padding-top: 64px;
   padding-bottom: 64px;
   position: relative;
@@ -1192,6 +1196,7 @@ p {
           column-gap: 80px;
   row-gap: 110px;
   padding-top: 60px;
+  padding-bottom: 148px;
 }
 
 .studies-content-certificate__img-wrapper {
@@ -1260,7 +1265,6 @@ p {
 }
 
 .trainers-intro {
-  text-align: center;
   background-color: #ffb402;
 }
 
@@ -1640,7 +1644,90 @@ p {
   row-gap: 64px;
   -webkit-column-gap: 32px;
           column-gap: 32px;
+}
+
+.teams {
+  background-color: #66b9f8;
+  border-top: 12px solid #92cdfb;
+  padding-bottom: 128px;
+}
+
+.teams__header, .teams__content, .teams__info {
   text-align: center;
+  color: #fff;
+}
+
+.teams__title {
+  margin-top: 64px;
+  margin-bottom: 24px;
+}
+
+.teams__info {
+  margin: 0 auto;
+  margin-bottom: 48px;
+  width: 65%;
+}
+
+.teams__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 228px 228px 228px min-content;
+      grid-template-columns: 228px 228px 228px -webkit-min-content;
+      grid-template-columns: 228px 228px 228px min-content;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.teams__form-button {
+  margin-left: 16px;
+}
+
+.teams__input {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.teams__input::-webkit-input-placeholder {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.teams__input:-ms-input-placeholder {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.teams__input::-ms-input-placeholder {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.teams__input::placeholder {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.teams__input:focus {
+  color: #fff;
 }
 
 .text-center {
@@ -1760,5 +1847,30 @@ p {
 .fade-in--delay-2000 {
   -webkit-animation-delay: 2000ms;
           animation-delay: 2000ms;
+}
+
+.fade-in--delay-2100 {
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
+}
+
+.fade-in--delay-2200 {
+  -webkit-animation-delay: 2200ms;
+          animation-delay: 2200ms;
+}
+
+.fade-in--delay-2300 {
+  -webkit-animation-delay: 2300ms;
+          animation-delay: 2300ms;
+}
+
+.fade-in--delay-2400 {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+}
+
+.fade-in--delay-2500 {
+  -webkit-animation-delay: 2500ms;
+          animation-delay: 2500ms;
 }
 /*# sourceMappingURL=styles.css.map */
