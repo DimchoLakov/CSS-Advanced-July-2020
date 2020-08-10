@@ -1,0 +1,58 @@
+@import "../01.Settings/settings-colors";
+
+.contact-us {
+    margin-bottom: 200px;
+
+}
+
+.contact-us__img {
+    width: 100%;
+    height: 500px;
+}
+
+.contact-us__content {
+    position: relative;
+}
+
+.contact-us__info-wrapper {
+    position: absolute;
+    left: 0;
+    bottom: -84px;
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    background-color: $white;
+}
+
+.contact-us__find-us-button {
+    margin: 0 auto;
+}
+
+.contact-us-info {
+    display: grid;
+    grid-template-columns: 216px 216px;
+    column-gap: 24px;
+    margin-bottom: 32px;
+
+    &__title {
+        margin: 0 0 18px 0;
+        color: $primary-300;
+    }
+    
+    &__details {
+        margin: 0 0 12px 0;
+        color: $grey-700;
+    }
+
+    &__details--working-hours {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: max-content auto;
+        row-gap: 18px;
+        column-gap: 24px;
+    }
+
+    &__time {
+        color: $secondary-800;
+    }
+}

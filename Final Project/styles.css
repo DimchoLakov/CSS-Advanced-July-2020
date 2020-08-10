@@ -466,6 +466,11 @@ p {
   color: #565656;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .wrapper {
   max-width: 1290px;
   width: 100%;
@@ -511,6 +516,33 @@ p {
 .btn--primary {
   background-color: #ff9100;
   color: #fff;
+}
+
+.btn--secondary {
+  background-color: #fff;
+  color: #ff9100;
+  border: 1px solid #ff9100;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 16px;
+  -webkit-transition: color 0.2s, background-color 0.2s;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.btn--secondary:hover {
+  background-color: #ff9100;
+  color: #fff;
+}
+
+.btn--no-shadow {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn--no-shadow:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .footer {
@@ -1728,6 +1760,71 @@ p {
 
 .teams__input:focus {
   color: #fff;
+}
+
+.contact-us {
+  margin-bottom: 200px;
+}
+
+.contact-us__img {
+  width: 100%;
+  height: 500px;
+}
+
+.contact-us__content {
+  position: relative;
+}
+
+.contact-us__info-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: -84px;
+  border-radius: 12px;
+  padding: 32px;
+  -webkit-box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+
+.contact-us__find-us-button {
+  margin: 0 auto;
+}
+
+.contact-us-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 216px 216px;
+      grid-template-columns: 216px 216px;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+  margin-bottom: 32px;
+}
+
+.contact-us-info__title {
+  margin: 0 0 18px 0;
+  color: #41bead;
+}
+
+.contact-us-info__details {
+  margin: 0 0 12px 0;
+  color: #565656;
+}
+
+.contact-us-info__details--working-hours {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  -ms-grid-columns: max-content auto;
+      grid-template-columns: -webkit-max-content auto;
+      grid-template-columns: max-content auto;
+  row-gap: 18px;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+}
+
+.contact-us-info__time {
+  color: #ff9100;
 }
 
 .text-center {

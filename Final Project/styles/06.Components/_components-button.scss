@@ -30,4 +30,28 @@
         background-color: $secondary-800;
         color: $white;
     }
+
+    &--secondary {
+        background-color: $white;
+        color: $secondary-800;
+        border: 1px solid $secondary-800;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 16px;
+        transition: color 0.2s, background-color 0.2s;
+
+        &:hover {
+            background-color: $secondary-800;
+            color: $white;
+        }
+    }
+
+    &--no-shadow {
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
 }
