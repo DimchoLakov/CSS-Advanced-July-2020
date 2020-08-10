@@ -453,7 +453,8 @@ select {
   margin-bottom: 16px;
 }
 
-input {
+input,
+textarea {
   border-radius: 6px;
   padding: 16px;
 }
@@ -1762,10 +1763,6 @@ img {
   color: #fff;
 }
 
-.contact-us {
-  margin-bottom: 200px;
-}
-
 .contact-us__img {
   width: 100%;
   height: 500px;
@@ -1825,6 +1822,42 @@ img {
 
 .contact-us-info__time {
   color: #ff9100;
+}
+
+.contact-us-form {
+  padding-top: 180px;
+  padding-bottom: 96px;
+}
+
+.contact-us-form__title {
+  color: #41bead;
+  margin: 0 0 32px 0;
+}
+
+.contact-us-form__content {
+  width: 850px;
+  margin: 0 auto;
+}
+
+.contact-us-form__form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 32px;
+          column-gap: 32px;
+  row-gap: 30px;
+  margin-bottom: 32px;
+}
+
+.contact-us-form__input {
+  border: 1px solid #919191;
+}
+
+.contact-us-form__input--textarea {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .text-center {

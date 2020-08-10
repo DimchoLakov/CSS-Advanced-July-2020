@@ -1,0 +1,33 @@
+@import "../01.Settings/settings-colors";
+
+.contact-us-form {
+    padding-top: 180px;
+    padding-bottom: 96px;
+
+    &__title {
+        color: $primary-300;
+        margin: 0 0 32px 0;
+    }
+
+    &__content {
+        width: 850px;
+        margin: 0 auto;
+    }
+
+    &__form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 32px;
+        row-gap: 30px;
+        margin-bottom: 32px;
+    }
+
+    &__input {
+        border: 1px solid $grey-500;
+
+        &--textarea {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+    }
+}
