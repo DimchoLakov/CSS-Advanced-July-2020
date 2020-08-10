@@ -476,6 +476,7 @@ img {
   max-width: 1290px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 .btn {
@@ -502,7 +503,7 @@ img {
   line-height: 20px;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus, .btn:active {
   cursor: pointer;
   -webkit-box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
@@ -541,7 +542,7 @@ img {
           box-shadow: none;
 }
 
-.btn--no-shadow:hover {
+.btn--no-shadow:hover, .btn--no-shadow:focus, .btn--no-shadow:active {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -565,7 +566,7 @@ img {
   transition: color 0.3s;
 }
 
-.footer a:hover {
+.footer a:hover, .footer a:focus {
   color: #41bead;
 }
 
@@ -724,7 +725,7 @@ img {
   font-weight: bold;
 }
 
-.nav a:hover {
+.nav a:hover, .nav a:focus {
   color: #ff7100;
 }
 
@@ -749,9 +750,11 @@ img {
   transition: transform 0.25s, -webkit-transform 0.25s;
 }
 
-.navbar__login .navbar__search:hover {
+.navbar__login .navbar__search:hover, .navbar__login .navbar__search:focus {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+          transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 
 .navbar__login .navbar__search-icon {
@@ -1803,8 +1806,12 @@ img {
 }
 
 .contact-us-info__details {
-  margin: 0 0 12px 0;
+  margin: 0;
   color: #565656;
+}
+
+.contact-us-info__details:not(:last-child) {
+  margin-bottom: 12px;
 }
 
 .contact-us-info__details--working-hours {
@@ -1858,6 +1865,43 @@ img {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.location {
+  background-color: #fff8e1;
+  padding-top: 96px;
+  padding-bottom: 96px;
+}
+
+.location__title {
+  color: #41bead;
+  margin: 0 0 48px 0;
+}
+
+.location-options {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -webkit-column-gap: 33px;
+          column-gap: 33px;
+}
+
+.location-option {
+  text-align: left;
+}
+
+.location-option__title {
+  color: #41bead;
+  margin: 0 0 18px 0;
+}
+
+.location-option__content {
+  margin: 0;
+}
+
+.location-option__content:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .text-center {

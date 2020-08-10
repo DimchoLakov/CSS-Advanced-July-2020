@@ -47,10 +47,11 @@
         padding: 29px 12px;
         transition: color 0.3s;
         font-weight: bold;
-    }
 
-    a:hover {
-        color: $secondary-900;
+        &:hover,
+        &:focus {
+            color: $secondary-900;
+        }
     }
 }
 
@@ -64,8 +65,10 @@
     .navbar__search {
         transition: transform 0.25s;
 
-        &:hover {
+        &:hover,
+        &:focus {
             transform: scale(1.2);
+            transition-timing-function: cubic-bezier(.47,2.02,.31,-0.36);
         }
     }
 

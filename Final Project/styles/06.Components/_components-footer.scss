@@ -16,7 +16,8 @@
         display: block;
         transition: color 0.3s;
 
-        &:hover {
+        &:hover,
+        &:focus {
             color: $primary-300;
         }
     }

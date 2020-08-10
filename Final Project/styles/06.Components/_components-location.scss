@@ -1,0 +1,35 @@
+@import "../01.Settings/settings-colors";
+
+.location {
+    background-color: $secondary-50;
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    &__title {
+        color: $primary-300;
+        margin: 0 0 48px 0;
+    }
+}
+
+.location-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 33px;
+}
+
+.location-option {
+    text-align: left;
+
+    &__title {
+        color: $primary-300;
+        margin: 0 0 18px 0; 
+    }
+    
+    &__content {
+        margin: 0;
+    }
+
+    &__content:not(:last-child) {
+        margin-bottom: 16px; 
+    }
+}
