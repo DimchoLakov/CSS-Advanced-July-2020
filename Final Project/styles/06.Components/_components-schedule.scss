@@ -8,13 +8,11 @@
     position: relative;
 
     &::before {
-        @include shredded-border;
-        top: -10px;
+        @include shredded-border(top, -10px);
     }
 
     &::after {
-        @include shredded-border;
-        bottom: -40px;
+        @include shredded-border(bottom, -40px);
     }
 }
 

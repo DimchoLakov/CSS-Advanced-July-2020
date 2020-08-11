@@ -1,7 +1,8 @@
-@mixin shredded-border {
+@mixin shredded-border ($top-or-bottom, $top-or-bottom-value) {
     display: block;
     content: "";
     position: absolute;
+    #{$top-or-bottom}: $top-or-bottom-value;
     left: 0;
     right: 0;
     height: 50px;

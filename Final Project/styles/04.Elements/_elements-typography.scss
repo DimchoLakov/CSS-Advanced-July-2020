@@ -4,8 +4,7 @@
     font-family: "Lato";
     font-weight: 900;
     font-style: normal;
-    src: url("./Lato/fonts/Lato-Black.woff") format("woff"), 
-        url("./Lato/fonts/Lato-Black.woff2") format("woff2");
+    src: url("./Lato/fonts/Lato-Black.woff") format("woff"), url("./Lato/fonts/Lato-Black.woff2") format("woff2");
 }
 
 @font-face {
@@ -20,8 +19,7 @@
     font-family: "Lato";
     font-weight: bold;
     font-style: normal;
-    src: url("./Lato/fonts/Lato-Bold.woff") format("woff"), 
-        url("./Lato/fonts/Lato-Bold.woff2") format("woff2");
+    src: url("./Lato/fonts/Lato-Bold.woff") format("woff"), url("./Lato/fonts/Lato-Bold.woff2") format("woff2");
 }
 
 @font-face {
@@ -36,8 +34,7 @@
     font-family: "Lato";
     font-weight: normal;
     font-style: normal;
-    src: url("./Lato/fonts/Lato-Hairline.woff") format("woff"),
-        url("./Lato/fonts/Lato-Hairline.woff2") format("woff2");
+    src: url("./Lato/fonts/Lato-Hairline.woff") format("woff"), url("./Lato/fonts/Lato-Hairline.woff2") format("woff2");
 }
 
 @font-face {
@@ -52,8 +49,7 @@
     font-family: "Lato";
     font-weight: 900;
     font-style: normal;
-    src: url("./Lato/fonts/Lato-Heavy.woff") format("woff"), 
-        url("./Lato/fonts/Lato-Heavy.woff2") format("woff2");
+    src: url("./Lato/fonts/Lato-Heavy.woff") format("woff"), url("./Lato/fonts/Lato-Heavy.woff2") format("woff2");
 }
 
 @font-face {
@@ -68,8 +64,7 @@
     font-family: "Lato";
     font-weight: 300;
     font-style: normal;
-    src: url("./Lato/fonts/Lato-Light.woff") format("woff"), 
-        url("./Lato/fonts/Lato-Light.woff2") format("woff2");
+    src: url("./Lato/fonts/Lato-Light.woff") format("woff"), url("./Lato/fonts/Lato-Light.woff2") format("woff2");
 }
 
 @font-face {
@@ -100,16 +95,14 @@
     font-family: "Lato";
     font-weight: normal;
     font-style: normal;
-    src: url("./Lato/fonts/Lato-Regular.woff") format("woff"), 
-        url("./Lato/fonts/Lato-Regular.woff2") format("woff2");
+    src: url("./Lato/fonts/Lato-Regular.woff") format("woff"), url("./Lato/fonts/Lato-Regular.woff2") format("woff2");
 }
 
 @font-face {
     font-family: "Lato";
     font-weight: 600;
     font-style: normal;
-    src: url("./Lato/fonts/Lato-Semibold.woff") format("woff"), 
-        url("./Lato/fonts/Lato-Semibold.woff2") format("woff2");
+    src: url("./Lato/fonts/Lato-Semibold.woff") format("woff"), url("./Lato/fonts/Lato-Semibold.woff2") format("woff2");
 }
 
 @font-face {
@@ -124,8 +117,7 @@
     font-family: "Lato";
     font-weight: 100;
     font-style: normal;
-    src: url("./Lato/fonts/Lato-Thin.woff") format("woff"), 
-        url("./Lato/fonts/Lato-Thin.woff2") format("woff2");
+    src: url("./Lato/fonts/Lato-Thin.woff") format("woff"), url("./Lato/fonts/Lato-Thin.woff2") format("woff2");
 }
 
 @font-face {
@@ -159,6 +151,18 @@ p {
     line-height: 20px;
 }
 
+@each $header, $fontSize in (h1: 36px, h2: 30px, h3: 24px, h4: 20px, h5: 18px) {
+    #{$header} {
+        font-size: $fontSize;
+    }
+}
+
+@each $header, $lineHeight in (h1: 44px, h2: 36px, h3: 30px, h4: 24px, h5: 22px) {
+    #{$header} {
+        line-height: $lineHeight;
+    }
+}
+
 h1,
 h2,
 h3,
@@ -171,30 +175,20 @@ h6 {
 
 h1 {
     font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
 }
 
 h2 {
     font-weight: 600;
-    font-size: 30px;
-    line-height: 36px;
 }
 
 h3 {
     font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
 }
 
 h4 {
     font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
 }
 
 h5 {
     font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
 }

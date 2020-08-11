@@ -1,4 +1,5 @@
 @import "../01.Settings/settings-colors";
+@import "../01.Settings/settings-breakpoints";
 
 .navbar,
 .navbar_nav,
@@ -8,18 +9,20 @@
     align-items: center;
 }
 
-.navbar__brand {
-    display: grid;
-    grid-template-columns: max-content max-content;
-    column-gap: 16px;
-    align-items: center;
+.navbar {
+    &__brand {
+        display: grid;
+        grid-template-columns: max-content max-content;
+        column-gap: 16px;
+        align-items: center;
+    }
 
-    .navbar__arrow {
+    &__arrow {
         width: 24px;
         height: 14px;
     }
 
-    .navbar__logo {
+    &__logo {
         width: 122px;
         height: 42px;
     }
@@ -27,10 +30,28 @@
 
 .navbar__nav {
     margin-left: auto;
+
+    @include for-phone-only {
+        display: none;
+        padding-top: 1em;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        right: 0;
+        background-color: $white;
+    }
 }
 
 .nav {
     margin: 0;
+
+    @include for-phone-only {
+        padding-left: 0;
+    }
+
+    &__bars {
+        cursor: pointer;
+    }
 
     &__item {
         list-style: none outside;
@@ -38,6 +59,10 @@
 
     &__item:not(:last-child) {
         margin-right: 24px;
+
+        @include for-phone-only {
+            margin-right: 0;
+        }
     }
 
     a {
@@ -47,6 +72,11 @@
         padding: 29px 12px;
         transition: color 0.3s;
         font-weight: bold;
+
+        @include for-phone-only {
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
 
         &:hover,
         &:focus {
@@ -65,10 +95,14 @@
     .navbar__search {
         transition: transform 0.25s;
 
+        @include for-phone-only {
+            padding-bottom: 22px;
+        }
+
         &:hover,
         &:focus {
             transform: scale(1.2);
-            transition-timing-function: cubic-bezier(.47,2.02,.31,-0.36);
+            transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
         }
     }
 
@@ -80,5 +114,49 @@
     a {
         display: block;
         padding: 29px 12px;
+    }
+}
+
+#NavToggle,
+.nav-toggle-btn {
+    display: none;
+}
+
+.nav-toggle-btn {
+    @include for-phone-only {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+@include for-phone-only {
+    #NavToggle:checked + .header .navbar__nav,
+    #NavToggle:checked + .header .navbar__nav ul {
+        display: block;
+    }
+
+    #NavToggle:checked + .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 15;
+        background-color: $white;
+    }
+
+    #NavToggle:checked + .header .navbar__nav {
+        flex-basis: 100%;
+        padding-bottom: 1.5em;
+        border-bottom-left-radius: 0.3em;
+        border-bottom-right-radius: 0.3em;
+    }
+
+    #NavToggle:checked + .header .navbar__nav ul {
+        text-align: center;
+    }
+
+    #NavToggle:checked + .header .navbar__nav ul li {
+        overflow: hidden;
+        border-radius: 0.4em;
     }
 }
