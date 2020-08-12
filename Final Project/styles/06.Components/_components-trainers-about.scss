@@ -2,10 +2,16 @@
 @import "../06.Components/components-trainer";
 @import "../06.Components/components-dotted-border";
 @import "../01.Settings/settings-mixins";
+@import "../01.Settings/settings-breakpoints";
 
 .trainers-about {
     padding-top: 96px;
     padding-bottom: 96px;
+
+    @include for-phone-only {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 
     &__content {
         position: relative;
@@ -21,6 +27,10 @@
             background-size: 20px 20px;
             background-repeat: repeat-x;
             bottom: -136px;
+
+            @include for-phone-only {
+                bottom: -112px;
+            }
         }
     }
 }
@@ -29,6 +39,11 @@
     display: grid;
     grid-template-columns: auto auto;
     column-gap: 32px;
+
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+    }
 }
 
 .trainers-about-list-item {
@@ -36,11 +51,31 @@
     grid-template-columns: auto 410px;
     column-gap: 32px;
 
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 64px;
+        }
+    }
+
+    &__content {
+        @include for-phone-only {
+            text-align: center;
+        }
+    }
+
     &__title {
         color: $primary-300;
         font-weight: bold;
         margin-top: 0;
         margin-bottom: 8px;
+
+        @include for-phone-only {
+            margin-top: 32px;
+        }
     }
 
     &__subtitle {

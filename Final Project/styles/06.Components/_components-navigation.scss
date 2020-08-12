@@ -10,6 +10,13 @@
 }
 
 .navbar {
+    @include for-phone-only {
+        display: grid;
+        grid-template-columns: 1fr 1fr auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     &__brand {
         display: grid;
         grid-template-columns: max-content max-content;
@@ -33,17 +40,30 @@
 
     @include for-phone-only {
         display: none;
-        padding-top: 1em;
+        padding-top: 10px;
+        padding-bottom: 5px;
         position: absolute;
         top: 72px;
         left: 0;
         right: 0;
         background-color: $white;
+        height: 0;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
     }
 }
 
 .nav {
     margin: 0;
+
+    @include for-phone-only {
+        background-color: $white;
+    }
+
+    &-toggle-btn {
+        @include for-phone-only {
+            display: block;
+        }
+    }
 
     @include for-phone-only {
         padding-left: 0;
@@ -89,14 +109,21 @@
     margin-left: 32px;
     display: grid;
     grid-template-columns: max-content max-content;
-    column-gap: 32px;
     align-items: center;
+
+    @include for-phone-only {
+        margin-left: auto;
+        justify-self: flex-end;
+        margin-right: 24px;
+    }
 
     .navbar__search {
         transition: transform 0.25s;
+        margin-right: 32px;
 
         @include for-phone-only {
             padding-bottom: 22px;
+            display: none;
         }
 
         &:hover,
@@ -125,16 +152,10 @@
 .nav-toggle-btn {
     @include for-phone-only {
         display: block;
-        margin-left: auto;
     }
 }
 
 @include for-phone-only {
-    #NavToggle:checked + .header .navbar__nav,
-    #NavToggle:checked + .header .navbar__nav ul {
-        display: block;
-    }
-
     #NavToggle:checked + .header {
         position: fixed;
         top: 0;
@@ -144,9 +165,12 @@
         background-color: $white;
     }
 
+    #NavToggle:checked + .header .navbar__nav,
+    #NavToggle:checked + .header .navbar__nav ul {
+        display: block;
+    }
+
     #NavToggle:checked + .header .navbar__nav {
-        flex-basis: 100%;
-        padding-bottom: 1.5em;
         border-bottom-left-radius: 0.3em;
         border-bottom-right-radius: 0.3em;
     }

@@ -1,9 +1,14 @@
 @import "../01.Settings/settings-colors";
+@import "../01.Settings/settings-breakpoints";
 
 .teams {
     background-color: $blue-300;
     border-top: 12px solid $blue-200;
     padding-bottom: 128px;
+
+    @include for-phone-only {
+        padding-bottom: 64px;
+    }
 
     &__header,
     &__content,
@@ -15,12 +20,21 @@
     &__title {
         margin-top: 64px;
         margin-bottom: 24px;
+
+        @include for-phone-only {
+            text-align: left;
+        }
     }
 
     &__info {
         margin: 0 auto;
         margin-bottom: 48px;
         width: 65%;
+
+        @include for-phone-only {
+            width: auto;
+            text-align: left;
+        }
     }
 
     &__form {
@@ -29,16 +43,37 @@
         column-gap: 32px;
         justify-content: center;
         align-items: center;
+
+        @include for-phone-only {
+            display: flex;
+            flex-flow: column wrap;
+        }
     }
 
     &__form-button {
         margin-left: 16px;
+
+        @include for-phone-only {
+            margin-left: 0;
+            margin-top: 10px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
     }
 
     &__input {
         background-color: transparent;
         border: 1px solid $white;
         color: $white;
+
+        @include for-phone-only {
+            margin-bottom: 36px;
+        }
+
+        @include for-phone-only {
+            width: 100%;
+        }
 
         &::placeholder {
             color: $white;

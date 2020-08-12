@@ -1,4 +1,5 @@
 @import "../01.Settings/settings-colors";
+@import "../01.Settings/settings-breakpoints";
 
 .footer {
     background-color: $grey-700;
@@ -6,6 +7,11 @@
     padding-top: 64px;
     padding-bottom: 64px;
     position: relative;
+
+    @include for-phone-only {
+        padding-top: 52px;
+        padding-bottom: 32px;
+    }
 
     a {
         font-style: normal;
@@ -21,6 +27,14 @@
             color: $primary-300;
         }
     }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Lato", sans-serif;
+    }
 }
 
 .footer-navbar {
@@ -28,22 +42,57 @@
     grid-template-columns: 1fr auto auto auto 180px;
     column-gap: 80px;
 
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 478px;
+        column-gap: normal;
+        position: relative;
+    }
+
     .footer-logo {
         display: block;
         width: 220px;
         height: 403px;
         position: absolute;
         bottom: 0;
+
+        @include for-phone-only {
+            display: none;
+        }
     }
 
     &::before {
         display: block;
         content: "";
         width: 220px;
+
+        @include for-phone-only {
+            display: none;
+        }
     }
 }
 
 .footer-nav {
+    @include for-phone-only {
+        margin-bottom: 32px;
+    }
+
+    &:nth-child(3n + 1),
+    &:nth-child(4n + 1) {
+        @include for-phone-only {
+            margin-left: 16px;
+        }
+    }
+
+    .find-us__title {
+        @include for-phone-only {
+            display: none;
+        }
+    }
+
     &__title,
     &__list {
         margin: 0;
@@ -63,6 +112,24 @@
         color: $grey-500;
         margin-top: 48px;
         margin-bottom: 0;
+
+        @include for-phone-only {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+        }
+
+        &::before {
+            @include for-phone-only {
+                display: block;
+                content: "";
+                background: $grey-600;
+                height: 1px;
+                position: relative;
+                top: -32px;
+            }
+        }
     }
 }
 
@@ -71,11 +138,24 @@
     grid-template-rows: 1fr;
     grid-template-columns: auto auto;
     column-gap: 24px;
+
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+
+        .footer-nav__list:nth-child(2) {
+            margin-top: 0;
+        }
+    }
 }
 
 .footer-nav__list {
     margin: 0;
     padding: 0;
+
+    @include for-phone-only {
+        margin-bottom: 12px;
+    }
 
     &-item {
         list-style: none outside;

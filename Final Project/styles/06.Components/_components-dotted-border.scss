@@ -1,5 +1,4 @@
 .dotted-border {
-
     &--horizontal {
         display: flex;
         flex-flow: row wrap;
@@ -16,8 +15,8 @@
         }
 
         &--horizontal:not(:last-child) {
-            margin-right: 8px;
             margin-bottom: 0;
+            margin-right: 8px;
         }
 
         &--white {

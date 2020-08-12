@@ -1,9 +1,14 @@
 @import "../01.Settings/settings-colors";
-@import "../06.Components/components-circles";
+@import "../01.Settings/settings-breakpoints";
+@import "../01.Settings/settings-mixins";
 
 .intro {
     background-color: $blue-400;
     height: 312px;
+
+    @include for-phone-only {
+        padding-bottom: 396px;
+    }
 
     &-header {
         text-align: center;
@@ -14,6 +19,10 @@
             width: 50%;
             margin: 0 auto;
             padding-top: 24px;
+
+            @include for-phone-only {
+                width: auto;
+            }
         }
     }
 }
@@ -27,17 +36,44 @@
     box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
     border-radius: 12px;
     position: relative;
-    bottom: -54px;
+    bottom: -40px;
+
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+    }
 
     &__button-wrapper {
         padding: 32px 0 32px 64px;
         display: flex;
         align-items: center;
         position: relative;
-    }
 
-    &__button-wrapper .btn {
-        margin-right: 64px;
+        .btn {
+            margin-right: 64px;
+
+            @include for-phone-only {
+                margin-right: 0;
+                padding: 16px 94px;
+            }
+        }
+
+        @include for-phone-only {
+            padding: 46px 24px;
+            position: static;
+
+            &::after {
+                @include shredded-border(
+                    top,
+                    140px,
+                    radial-gradient(closest-side, white 30%, #c7c7c7 65%, transparent 50%)
+                );
+            }
+
+            .circles {
+                display: none;
+            }
+        }
     }
 }
 
@@ -45,6 +81,13 @@
     display: grid;
     grid-template-columns: max-content max-content max-content max-content;
     column-gap: 64px;
+
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: flex-start;
+        padding-top: 20px;
+    }
 
     .intro-widget {
         display: grid;
@@ -64,6 +107,14 @@
             background-color: $grey-100;
             width: 2px;
             height: 24px;
+
+            @include for-phone-only {
+                right: auto;
+                top: auto;
+                left: 11px;
+                bottom: -8px;
+                transform: rotate(90deg);
+            }
         }
 
         &__title {

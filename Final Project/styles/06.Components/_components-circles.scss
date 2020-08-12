@@ -1,3 +1,5 @@
+@import "../01.Settings/settings-mixins";
+
 .circles {
     position: absolute;
     right: -12px;
@@ -5,17 +7,20 @@
     .circle {
         width: 12px;
         height: 12px;
-        background-color: transparent;
-        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.14), inset 0px 2px 2px rgba(0, 0, 0, 0.12), inset 0px 1px 3px rgba(0, 0, 0, 0.2);
+        background-color: $white;
+        box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.14), inset 0px 2px 2px rgba(0, 0, 0, 0.12),
+            inset 0px 1px 3px rgba(0, 0, 0, 0.2);
         border-radius: 50%;
         margin: 7px 0;
 
         &:first-child {
-            box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.06), inset 0px -2px 2px rgba(0, 0, 0, 0.08), inset 0px -4px 2px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.06), inset 0px -2px 2px rgba(0, 0, 0, 0.08),
+                inset 0px -4px 2px rgba(0, 0, 0, 0.05);
         }
 
         &:last-child {
-            box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.06), inset 0px 3px 1px rgba(0, 0, 0, 0.08), inset 0px 1px 2px rgba(0, 0, 0, 0.05)
+            box-shadow: inset 0px 2px 1px rgba(0, 0, 0, 0.06), inset 0px 3px 1px rgba(0, 0, 0, 0.08),
+                inset 0px 1px 2px rgba(0, 0, 0, 0.05);
         }
 
         &:nth-child(-n + 3) {
@@ -23,7 +28,7 @@
         }
 
         &:nth-child(4) {
-            background: linear-gradient($blue-400, $blue-400, 49%, $white 49%, $white 51%); 
+            background: linear-gradient($blue-400, $blue-400, 49%, $white 49%, $white 51%);
         }
 
         &:nth-last-of-type(-n + 3) {

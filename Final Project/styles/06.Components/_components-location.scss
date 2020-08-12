@@ -1,9 +1,15 @@
 @import "../01.Settings/settings-colors";
+@import "../01.Settings/settings-breakpoints";
 
 .location {
     background-color: $secondary-50;
     padding-top: 96px;
     padding-bottom: 96px;
+
+    @include for-phone-only {
+        padding-top: 66px;
+        padding-bottom: 56px;
+    }
 
     &__title {
         color: $primary-300;
@@ -15,21 +21,34 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 33px;
+
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+    }
 }
 
 .location-option {
     text-align: left;
 
+    @include for-phone-only {
+        margin-bottom: 32px;
+    }
+
     &__title {
         color: $primary-300;
-        margin: 0 0 18px 0; 
+        margin: 0 0 18px 0;
+
+        @include for-phone-only {
+            text-align: center;
+        }
     }
-    
+
     &__content {
         margin: 0;
     }
 
     &__content:not(:last-child) {
-        margin-bottom: 16px; 
+        margin-bottom: 16px;
     }
 }

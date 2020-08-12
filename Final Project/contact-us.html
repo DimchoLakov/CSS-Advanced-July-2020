@@ -11,7 +11,8 @@
 </head>
 
 <body>
-
+    
+    <input type="checkbox" id="NavToggle">
     <header class="header">
         <div class="wrapper">
             <div class="navbar">
@@ -44,6 +45,7 @@
                     </a>
                     <button class="btn btn-nav btn--primary">Вход</button>
                 </div>
+                <label for="NavToggle" class="nav-toggle-btn" tabindex="0"><img src="./assets/icons/hamburger.svg" alt="hamburger icon" class="nav__bars"></label>
             </div>
         </div>
     </header>
@@ -105,7 +107,7 @@
                             class="contact-us-form__input">
                         <input type="email" name="Email" id="Email" placeholder="Имейл адрес"
                             class="contact-us-form__input">
-                        <textarea name="Title" id="Title" placeholder="Съобщение" rows="10"
+                        <textarea name="Message" id="Message" placeholder="Съобщение" rows="10"
                             class="contact-us-form__input contact-us-form__input--textarea"></textarea>
                     </form>
                     <button class="btn btn--primary contact-us-form__submit-btn">Изпрати</button>
@@ -122,20 +124,20 @@
                     <div class="location-options">
                         <div class="location-option">
                             <h3 class="location-option__title">Метро</h3>
-                            <p class="location-option__content">Метростанция Жолио Кюри - на 5-10 минути от СофтУни</p>
-                            <p class="location-option__content">Метростанция Г. М. Димитров - на 5-10 минути от СофтУни</p>
+                            <p class="location-option__content">Метростанция <strong>Жолио Кюри</strong> - на 5-10 минути от СофтУни</p>
+                            <p class="location-option__content">Метростанция <strong>Г. М. Димитров</strong> - на 5-10 минути от СофтУни</p>
                         </div>
                         <div class="location-option">
                             <h3 class="location-option__title">Автобуси</h3>
-                            <p class="location-option__content">67, 413 - Спирка “СТЦ Интерпред” (1112) или спирка “ж.к. Дианабад” (0627) (на бул. Драган Цанков)</p>
-                            <p class="location-option__content">88, 94, 102 - Спирка “ПК Диана” (1342) (на 10-ина минути от СофтУни)</p>
-                            <p class="location-option__content">88, 280, 294 - Спирка “СБАЛ по онкология” (0764) (на кръстовището на бул. Г. М. Димитров и бул. Драган Цанков)</p>
-                            <p class="location-option__content">123, 69, 70, 88, 67, 413 - Спирка “СБАЛ по онкология” (2542) (на кръстовището на бул. Г. М. Димитров и бул. Драган Цанков)</p>
+                            <p class="location-option__content"><strong>67, 413</strong> - Спирка “СТЦ Интерпред” (1112) или спирка “ж.к. Дианабад” (0627) (на бул. Драган Цанков)</p>
+                            <p class="location-option__content"><strong>88, 94, 102</strong> - Спирка “ПК Диана” (1342) (на 10-ина минути от СофтУни)</p>
+                            <p class="location-option__content"><strong>88, 280, 294</strong> - Спирка “СБАЛ по онкология” (0764) (на кръстовището на бул. Г. М. Димитров и бул. Драган Цанков)</p>
+                            <p class="location-option__content"><strong>123, 69, 70, 88, 67, 413</strong> - Спирка “СБАЛ по онкология” (2542) (на кръстовището на бул. Г. М. Димитров и бул. Драган Цанков)</p>
                         </div>
                         <div class="location-option">
                             <h3 class="location-option__title">Маршрутки</h3>
-                            <p class="location-option__content">5 - минава през метростанцията на бул Г. М. Димитров</p>
-                            <p class="location-option__content">27 - минава през метростанцията на бул Г. М. Димитров</p>
+                            <p class="location-option__content"><strong>5</strong> - минава през метростанцията на бул Г. М. Димитров</p>
+                            <p class="location-option__content"><strong>27</strong> - минава през метростанцията на бул Г. М. Димитров</p>
                         </div>
                     </div>
                 </div>

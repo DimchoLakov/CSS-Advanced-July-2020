@@ -1,4 +1,11 @@
+@import "../01.Settings/settings-breakpoints";
 @import "./components-dotted-border";
+
+.course-info {
+    @include for-phone-only {
+        margin-top: 392px;
+    }
+}
 
 .course-info__content {
     padding-top: 152px;
@@ -11,6 +18,15 @@
     align-items: center;
     column-gap: 111px;
     margin-bottom: 96px;
+
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+
+        &__desc {
+            margin-bottom: 32px;
+        }
+    }
 
     &__paragraph {
         margin-top: 0;
@@ -39,6 +55,15 @@
     column-gap: 190px;
     position: relative;
 
+    @include for-phone-only { 
+        display: flex;
+        flex-flow: column wrap;
+        
+        .dotted-border {
+            display: none;
+        }
+    }
+
     .dotted-border {
         position: absolute;
         left: 50%;
@@ -50,6 +75,14 @@
     grid-template-columns: auto 1fr;
     align-items: flex-start;
     column-gap: 32px;
+
+    @include for-phone-only { 
+        margin-bottom: 74px;
+
+        &:first-child::after {
+            @include shredded-border(bottom, 55%, radial-gradient(circle, $secondary-100 42%, $white 42%));
+        }
+    }
 
     &__title {
         margin-top: 0;

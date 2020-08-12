@@ -1,4 +1,4 @@
-@mixin shredded-border ($top-or-bottom, $top-or-bottom-value) {
+@mixin shredded-border($top-or-bottom, $top-or-bottom-value, $radial-gradient) {
     display: block;
     content: "";
     position: absolute;
@@ -6,7 +6,8 @@
     left: 0;
     right: 0;
     height: 50px;
-    background: radial-gradient(closest-side, #fff, #fff 50%, transparent 50%);
+    background: $radial-gradient;
     background-size: 20px 20px;
     background-repeat: repeat-x;
+    background-origin: border-box;
 }

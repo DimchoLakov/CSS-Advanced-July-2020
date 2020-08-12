@@ -11,7 +11,8 @@
 </head>
 
 <body>
-
+    
+    <input type="checkbox" id="NavToggle">
     <header class="header">
         <div class="wrapper">
             <div class="navbar">
@@ -42,8 +43,9 @@
                     <a href="" class="navbar__search">
                         <img src="./assets/icons/magnifier.svg" alt="Search" class="navbar__search-icon">
                     </a>
-                    <button class="btn btn-nav btn--primary">Вход</button>
+                    <button class="navbar__login-btn btn btn-nav btn--primary">Вход</button>
                 </div>
+                <label for="NavToggle" class="nav-toggle-btn" tabindex="0"><img src="./assets/icons/hamburger.svg" alt="hamburger icon" class="nav__bars"></label>
             </div>
         </div>
     </header>
@@ -442,7 +444,7 @@
                     </ul>
                 </div>
                 <div class="footer-nav">
-                    <h5 class="footer-nav__title">Намери ни</h5>
+                    <h5 class="footer-nav__title find-us__title">Намери ни</h5>
                     <ul class="footer-nav__list footer-nav__list--icon">
                         <li class="footer-nav__list-item footer-nav__list-item--icon">
                             <a href="">

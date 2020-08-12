@@ -1,5 +1,6 @@
 @import "../01.Settings/settings-colors";
 @import "../01.Settings/settings-mixins";
+@import "../01.Settings/settings-breakpoints";
 
 .schedule {
     background-color: $yellow-600;
@@ -8,11 +9,11 @@
     position: relative;
 
     &::before {
-        @include shredded-border(top, -10px);
+        @include shredded-border(top, -10px, radial-gradient(closest-side, #fff, #fff 50%, transparent 50%));
     }
 
     &::after {
-        @include shredded-border(bottom, -40px);
+        @include shredded-border(bottom, -40px, radial-gradient(closest-side, #fff, #fff 50%, transparent 50%));
     }
 }
 
@@ -22,10 +23,24 @@
     align-items: flex-end;
     column-gap: 138px;
 
+    @include for-phone-only {
+        display: flex;
+        flex-flow: column wrap;
+
+        &__schechulde-icon-wrapper {
+            display: none;
+        }
+    }
+
     &__desc {
         display: grid;
         grid-template-columns: auto 1fr;
         column-gap: 32px;
+
+        @include for-phone-only {
+            display: flex;
+            flex-flow: column wrap;
+        }
     }
 
     &__title {

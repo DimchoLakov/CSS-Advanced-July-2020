@@ -1,5 +1,6 @@
 @import "../01.Settings/settings-colors";
 @import "../06.Components/components-dotted-border";
+@import "../01.Settings/settings-breakpoints";
 
 .studies-content {
     display: grid;
@@ -10,12 +11,22 @@
     row-gap: 110px;
     padding-top: 60px;
     padding-bottom: 148px;
+
+    @include for-phone-only {
+        display: flex;
+        flex-flow: row wrap;
+        row-gap: 74px;
+    }
 }
 
 .studies-content-certificate__img-wrapper {
     justify-self: center;
     position: relative;
     margin-left: 66px;
+
+    @include for-phone-only {
+        display: none;
+    }
 
     .studies-content-certificate__info {
         position: absolute;
@@ -37,6 +48,20 @@
     grid-template-columns: auto 1fr;
     column-gap: 32px;
 
+    @include for-phone-only {
+        &:first-child {
+            display: none;
+        }
+
+        &:nth-child(3) {
+            position: relative;
+        }
+
+        &:nth-child(3)::after {
+            @include shredded-border(bottom, -65px, radial-gradient(circle, $secondary-100 42%, $white 42%));
+        }
+    }
+
     &__content {
         color: $grey-700;
         position: relative;
@@ -45,6 +70,10 @@
             position: absolute;
             top: 0;
             right: -48px;
+
+            @include for-phone-only {
+                display: none;
+            }
         }
     }
 
