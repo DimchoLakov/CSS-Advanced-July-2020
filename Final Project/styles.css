@@ -3902,8 +3902,8 @@ img {
 }
 
 .animate-border {
-  -webkit-transition: all 300ms ease-in;
-  transition: all 300ms ease-in;
+  -webkit-transition: border-bottom 300ms ease-in, padding-bottom 300ms ease-in;
+  transition: border-bottom 300ms ease-in, padding-bottom 300ms ease-in;
 }
 
 .animate-border:hover {
