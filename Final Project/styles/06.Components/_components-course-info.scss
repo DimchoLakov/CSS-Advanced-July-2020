@@ -10,6 +10,11 @@
 .course-info__content {
     padding-top: 152px;
     padding-bottom: 62px;
+
+    @include for-phone-only {
+        padding-top: 104px;
+        padding-bottom: 0;
+    }
 }
 
 .course-info-about {
@@ -22,6 +27,7 @@
     @include for-phone-only {
         display: flex;
         flex-flow: column wrap;
+        margin-bottom: 64px;
 
         &__desc {
             margin-bottom: 32px;
@@ -55,10 +61,10 @@
     column-gap: 190px;
     position: relative;
 
-    @include for-phone-only { 
+    @include for-phone-only {
         display: flex;
         flex-flow: column wrap;
-        
+
         .dotted-border {
             display: none;
         }
@@ -76,7 +82,7 @@
     align-items: flex-start;
     column-gap: 32px;
 
-    @include for-phone-only { 
+    @include for-phone-only {
         margin-bottom: 74px;
 
         &:first-child::after {

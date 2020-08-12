@@ -52,6 +52,38 @@
     }
 }
 
+.fade-in-top {
+    animation-name: fade-in-top;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+
+    $delayInMs: 100;
+    $maxDelayInMs: 2500ms;
+    @while $delayInMs <= $maxDelayInMs {
+        &--delay-#{$delayInMs} {
+            animation-delay: #{$delayInMs}ms;
+        }
+
+        $delayInMs: $delayInMs + 100;
+    }
+}
+
+.fade-in-bot {
+    animation-name: fade-in-bot;
+    animation-duration: 1.2s;
+    animation-fill-mode: both;
+
+    $delayInMs: 100;
+    $maxDelayInMs: 2500ms;
+    @while $delayInMs <= $maxDelayInMs {
+        &--delay-#{$delayInMs} {
+            animation-delay: #{$delayInMs}ms;
+        }
+
+        $delayInMs: $delayInMs + 100;
+    }
+}
+
 .animate-border {
     transition: all 300ms ease-in;
 
@@ -64,4 +96,8 @@
         padding-bottom: 0;
         border-bottom: 17px solid $secondary-500;
     }
+}
+
+.hop {
+    animation: hop 0.7s linear;
 }
