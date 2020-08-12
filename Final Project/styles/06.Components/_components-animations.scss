@@ -7,3 +7,51 @@
         opacity: 1;
     }
 }
+
+@keyframes bounce {
+    20%,
+    45%,
+    70%,
+    90%,
+    to {
+        transform: translateY(0);
+    }
+
+    32% {
+        transform: translateY(-45px);
+    }
+
+    58% {
+        transform: translateY(-30px);
+    }
+
+    82% {
+        transform: translateY(-15px);
+    }
+
+    95% {
+        transform: translateY(-4px);
+    }
+}
+
+@keyframes fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
