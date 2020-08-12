@@ -117,19 +117,24 @@
             position: absolute;
             bottom: 0;
             left: 0;
+            right: 0;
             text-align: center;
+            border-top: 1px solid $grey-600;
+            padding-top: 32px;
+            padding-left: 16px;
+            padding-right: 16px;
         }
 
-        &::before {
-            @include for-phone-only {
-                display: block;
-                content: "";
-                background: $grey-600;
-                height: 1px;
-                position: relative;
-                top: -32px;
-            }
-        }
+        // &::before {
+        //     @include for-phone-only {
+        //         display: block;
+        //         content: "";
+        //         background: $grey-600;
+        //         height: 1px;
+        //         position: relative;
+        //         top: -32px;
+        //     }
+        // }
     }
 }
 

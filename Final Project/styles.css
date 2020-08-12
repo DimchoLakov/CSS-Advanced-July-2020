@@ -715,18 +715,12 @@ img {
     position: absolute;
     bottom: 0;
     left: 0;
+    right: 0;
     text-align: center;
-  }
-}
-
-@media (max-width: 599px) {
-  .footer-nav .footer__copyright::before {
-    display: block;
-    content: "";
-    background: #696969;
-    height: 1px;
-    position: relative;
-    top: -32px;
+    border-top: 1px solid #696969;
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
