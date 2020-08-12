@@ -1,6 +1,7 @@
 @import "../01.Settings/settings-colors";
-@import "../06.Components/components-dotted-border";
 @import "../01.Settings/settings-breakpoints";
+@import "../02.Tools/tools-placeholder-selectors";
+@import "../06.Components/components-dotted-border";
 
 .studies-content {
     display: grid;
@@ -30,10 +31,7 @@
     }
 
     .studies-content-certificate__info {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @extend %absolute-centered;
         margin: 0;
         font-style: normal;
         font-weight: 500;
