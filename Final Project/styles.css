@@ -855,16 +855,12 @@ img {
 @media (max-width: 599px) {
   .navbar__nav {
     display: none;
-    padding-top: 10px;
-    padding-bottom: 5px;
     position: absolute;
     top: 72px;
     left: 0;
     right: 0;
     background-color: #fff;
     height: 0;
-    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -875,6 +871,10 @@ img {
 @media (max-width: 599px) {
   .nav {
     background-color: #fff;
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
