@@ -124,17 +124,6 @@
             padding-left: 16px;
             padding-right: 16px;
         }
-
-        // &::before {
-        //     @include for-phone-only {
-        //         display: block;
-        //         content: "";
-        //         background: $grey-600;
-        //         height: 1px;
-        //         position: relative;
-        //         top: -32px;
-        //     }
-        // }
     }
 }
 
